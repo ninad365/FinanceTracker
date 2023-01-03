@@ -141,6 +141,10 @@
     <Compile Include="Migrations\202301010411454_ConnectTransactionUser.Designer.cs">
       <DependentUpon>202301010411454_ConnectTransactionUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301010917352_AddExpanseFlag.cs" />
+    <Compile Include="Migrations\202301010917352_AddExpanseFlag.Designer.cs">
+      <DependentUpon>202301010917352_AddExpanseFlag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
@@ -213,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301010411454_ConnectTransactionUser.resx">
       <DependentUpon>202301010411454_ConnectTransactionUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301010917352_AddExpanseFlag.resx">
+      <DependentUpon>202301010917352_AddExpanseFlag.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

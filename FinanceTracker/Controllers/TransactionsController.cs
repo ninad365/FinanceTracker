@@ -50,7 +50,7 @@ namespace FinanceTracker.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Date,Amount,Category,Description")] Transaction transaction)
+        public ActionResult Create([Bind(Include = "Id,Date,Amount,IsExpense,Description")] Transaction transaction)
         {
             int userId;
             try
@@ -96,7 +96,7 @@ namespace FinanceTracker.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Date,Amount,Category,Description")] Transaction transaction)
+        public ActionResult Edit([Bind(Include = "Id,Date,Amount,IsExpense,Description")] Transaction transaction)
         {
             int userId;
             try
